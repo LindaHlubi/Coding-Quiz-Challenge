@@ -86,7 +86,7 @@ function render(questionNum) {
         listItem.addEventListener("click", (compare));
     })
 }
-// thi event will compare the choices with the answer
+// this event will compare the choices with the answer
 function compare(event) {
     var element = event.target;
 
@@ -100,7 +100,7 @@ function compare(event) {
             createDiv.textContent = "Correct!";
             // Correct condition 
         } else {
-            // Will deduct -5 seconds off secondsLeft for wrong answers
+            // Will deduct -10 seconds off secondsLeft for wrong answers
             secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "Wrong! ";
         }
